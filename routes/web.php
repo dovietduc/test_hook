@@ -5,7 +5,6 @@ use App\Jobs\ReconcileAcount;
 use App\Models\User;
 use Illuminate\Pipeline\Pipeline;
 use App\Http\Controllers\CsvImportController;
-use Illuminate\Support\Enumerable;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,10 +17,9 @@ use Illuminate\Support\Enumerable;
 |
 */
 
-
-
-
 Route::get('/', function () {
+    echo 1;
+    echo 2;
     echo "test";
     echo 2;
     echo 788;
@@ -31,6 +29,7 @@ Route::get('/', function () {
 
     dd($items);
 //    return view('welcome');
+    return view('welcome');
 });
 
 
