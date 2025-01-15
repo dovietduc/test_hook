@@ -5,6 +5,7 @@ use App\Jobs\ReconcileAcount;
 use App\Models\User;
 use Illuminate\Pipeline\Pipeline;
 use App\Http\Controllers\CsvImportController;
+use Illuminate\Support\Enumerable;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +18,15 @@ use App\Http\Controllers\CsvImportController;
 |
 */
 
+
+
+
 Route::get('/', function () {
-    return view('welcome');
+//    $collection = collect([1, 2, 3, 4, 5]);
+    $items = \Illuminate\Support\Facades\DB::table('plans')->get();
+
+    dd($items);
+//    return view('welcome');
 });
 
 
