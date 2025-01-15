@@ -18,15 +18,19 @@ use Illuminate\Support\Enumerable;
 |
 */
 
-
-
-
 Route::get('/', function () {
+    echo 1;
+    echo 2;
+    echo "test";
+    echo 2;
+    echo 788;
+    echo 123;
 //    $collection = collect([1, 2, 3, 4, 5]);
     $items = \Illuminate\Support\Facades\DB::table('plans')->get();
 
     dd($items);
 //    return view('welcome');
+    return view('welcome');
 });
 
 
