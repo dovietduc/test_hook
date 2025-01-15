@@ -5,7 +5,6 @@ use App\Jobs\ReconcileAcount;
 use App\Models\User;
 use Illuminate\Pipeline\Pipeline;
 use App\Http\Controllers\CsvImportController;
-use Illuminate\Support\Enumerable;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +16,6 @@ use Illuminate\Support\Enumerable;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-
-
 
 Route::get('/', function () {
     echo 1;
@@ -33,6 +29,7 @@ Route::get('/', function () {
 
     dd($items);
 //    return view('welcome');
+    return view('welcome');
 });
 
 
