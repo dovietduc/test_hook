@@ -16,7 +16,6 @@ class CsvImportController extends Controller
     // Hàm hiển thị form
     public function showForm()
     {
-        echo "Hello D";
         return view('import_csv');
     }
 
