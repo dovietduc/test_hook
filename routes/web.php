@@ -22,6 +22,10 @@ use Illuminate\Support\Enumerable;
 
 
 Route::get('/', function () {
+    echo "test";
+    echo 2;
+    echo 788;
+    echo 123;
 //    $collection = collect([1, 2, 3, 4, 5]);
     $items = \Illuminate\Support\Facades\DB::table('plans')->get();
 
